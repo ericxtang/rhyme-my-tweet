@@ -1,0 +1,5 @@
+Music Hackday Project
+
+Finds a piece of popular lyric from musixmatch to rhyme with your tweet.
+
+Uses the CMU Pronouncing Dictionary.  http://www.speech.cs.cmu.edu/cgi-bin/cmudict

@@ -1,0 +1,25 @@
+<% if flash[:error] %>
+  <% flash.delete(:error).each do |n| %>
+    <div><%=n%></div>
+  <% end %>
+<% end %>
+
+<% if flash[:notice] %>
+  <% flash.delete(:notice).each do |n| %>
+    <div><%=n%></div>
+  <% end %>
+<% end %>
+<h1>Rhyme My Tweets</h1>
+
+<div>
+  <% form_tag rhyme_tweet_index_path do %>
+    <%= text_area_tag "tweet_field" %>
+    <%= submit_tag "tweet" %>
+  <% end %>
+</div>
+
+<div>
+  <% for collection in @tweet_and_rhyme %>
+    <%= render :partial => "tweet_and_rhyme", :locals => {:tweet_and_rhyme => collection} %>
+  <% end %>
+</div>

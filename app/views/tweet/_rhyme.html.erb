@@ -1,0 +1,6 @@
+<div>
+  <span class="artist"><%=rhyme["artist"]%></span> - <span class="song"><%=rhyme["song"]%></span>
+  <div class="phrase"><%=rhyme["phrase"]%></div>
+  <div class="time"><%=rhyme["time"]%></div>
+  <div><%= link_to "youtube video", "http://www.youtube.com/results?search_query=#{rhyme["artist"]}#{rhyme["song"]}", :target => "_blank"%></div>
+</div>

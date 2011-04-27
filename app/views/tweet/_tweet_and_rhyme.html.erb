@@ -1,0 +1,5 @@
+<div class="tweet_and_rhyme">
+  <div class="tweet"><%= render :partial => "tweet", :locals => {:tweet => tweet_and_rhyme["tweet"]} if tweet_and_rhyme["tweet"]%></div>
+  <div class="rhyme"><%= render :partial => "rhyme", :locals => {:rhyme => tweet_and_rhyme["rhyme"]} if tweet_and_rhyme["rhyme"]%></div>
+  <br style="clear:both"/>
+</div>
